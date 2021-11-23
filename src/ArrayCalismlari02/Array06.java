@@ -1,36 +1,39 @@
 package ArrayCalismlari02;
 
 import java.util.Arrays;
+import java.util.Iterator;
 
 public class Array06 {
 
 	public static void main(String[] args) {
-		// Soru 6) Verilen bir Array’den isten degere esit olan elamanlari kaldirip,
+		// Soru 6) Verilen bir Arrayâ€™den isten degere esit olan elamanlari kaldirip,
 		// kalanlari yeni bir
 		// Array olarak yazdiran bir method yaziniz
 
-		int istenen = 7;
+		int istenmeyen = 5;
 
-		String str1 = "";
+		int ary[] = { 5, 2, 8, 6, 1, 5, 8 };
 
-		int arr1[] = { 11, 3, 7, 19, 1, 5, 13, 15, 13, 13 };
+		int sayac = 0;
 
-		Arrays.sort(arr1);
-
-		for (int i = 0; i < arr1.length; i++) {
-
-			if (arr1[i] != istenen) {
-
-				str1 += arr1[i] + " ";
-
+		for (int i = 0; i < ary.length; i++) {
+			if (ary[i] == istenmeyen) {
+				sayac++;
 			}
 
 		}
 
-		String arr2[] = str1.split(" ");
+		int ary2[] = new int[ary.length - sayac];
+		System.out.println(Arrays.toString(ary2));
+		int index = 0;
 
-		System.out.println(Arrays.toString(arr2));
-
+		for (int i = 0; i < ary.length; i++) {
+			if (ary[i] != istenmeyen) {
+				ary2[index] = ary[i];
+				index++;
+			}
+		}
+		System.out.println(Arrays.toString(ary2));
 	}
 
 }
