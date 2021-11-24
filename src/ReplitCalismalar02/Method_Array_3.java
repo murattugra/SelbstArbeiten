@@ -21,7 +21,7 @@ public class Method_Array_3 {
 
 		girdi = girdi.replaceAll("\\D", "");
 		
-		String ary[] = girdi.split("");
+		int ary = girdi.split("");
 		System.out.println(Arrays.toString(ary));
 	
 		int ary2[]=new int[2];
