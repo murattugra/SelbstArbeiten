@@ -21,10 +21,10 @@ public class Method_Array_3 {
 
 		girdi = girdi.replaceAll("\\D", "");
 		
-		int ary = girdi.split("");
+		String[] ary = girdi.split("");
 		System.out.println(Arrays.toString(ary));
 	
-		int ary2[]=new int[2];
+		String ary2[]=new String[ary.length];
 		for (int i = 0; i < ary.length; i++) {
 			ary2[i]=ary[i];
 			
