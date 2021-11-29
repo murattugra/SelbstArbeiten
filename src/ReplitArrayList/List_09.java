@@ -31,10 +31,10 @@ public class List_09 {
 		int sayac=0;
 		int max=0;
 		
-		for (int i = 0; i < arr.length; i++) {
+		for (int i = 0; i < arr.length; i++) {// Java öğrenmek kolaydır
 			
 			for (int j = 1; j < arr.length; j++) {
-				
+	//0			
 				if (arr[i].equals(arr[j])) {
 					
 					sayac++;
