@@ -43,6 +43,8 @@ public class List_09 {
 					max=sayac;
 					encok=arr[i]+" "+sayac;
 				
+				}else if (max==sayac) {
+					
 				}
 			}
 		sayac=0;
