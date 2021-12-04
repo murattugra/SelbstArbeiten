@@ -1,4 +1,4 @@
-package ArrayList;
+package kleineProjecten;
 
 import java.util.ArrayList;
 import java.util.Arrays;

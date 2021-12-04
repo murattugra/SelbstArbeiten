@@ -1,4 +1,4 @@
-package Z_Kendidenemelerim;
+package kleineProjecten;
 
 import java.util.Scanner;
 
