@@ -17,15 +17,11 @@ public class CagirmaClassi {
 			switch(secim) {
 			
 			case 1:
-				Scanner scan=new Scanner(System.in);
-				System.out.println("Eklemek istediginiz kitap ismini giriniz");
-				Depo.kitapAdi.add(scan.nextLine());
-				System.out.println("Kitabin yazarini yaziniz");
-				Depo.kitapYazar.add(scan.nextLine());
-				System.out.println("Kitabin fiyatini yaziniz");
-				Depo.kitapFiyat.add(scan.nextDouble());
-				Depo.kitapNo.add(Depo.kitapNo.get(Depo.kitapNo.size()-1)+1);
 				
+				KitapEkleme ekle=new KitapEkleme();
+				
+				ekle.main(args);
+		
 				break;
 			case 2:
 				Scanner scan1=new Scanner(System.in);
