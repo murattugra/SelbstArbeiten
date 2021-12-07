@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class CagirmaClassi {
 
+	
 	public static void main(String[] args) {
 		
 		
@@ -73,6 +74,7 @@ public class CagirmaClassi {
 				for (int i = 0; i < Depo.kitapNo.size(); i++) {
 					if (noileArama==Depo.kitapNo.get(i)) {
 						Depo.kitapAdi.remove(i);
+						Depo.
 						Depo.kitapFiyat.remove(i);
 						Depo.kitapNo.remove(i);
 						Depo.kitapYazar.remove(i);
@@ -106,7 +108,7 @@ public class CagirmaClassi {
 		
 	}
 
-	private static int menu(int secim) {
+	public static int menu(int secim) {
 		System.out.println("************JAVA KITAPCISINA HOSGELDINIZ**************");
 		System.out.println("********Lutfen yapmak istediginiz islemi giriniz******");
 		System.out.println("1-kitap ekle");
