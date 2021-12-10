@@ -11,6 +11,10 @@ public class Soru02 {
 		Bir array elemanlari en buyuk degerine kadar surekli artan, en 
 		buyuk degerinden sonra surekli azalan deger aliyorsa Mauntain Array'dir
 		 */
+		
+		
+		
+		
 	}
 
 }
