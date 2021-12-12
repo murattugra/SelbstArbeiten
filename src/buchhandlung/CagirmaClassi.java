@@ -74,7 +74,7 @@ public class CagirmaClassi {
 				for (int i = 0; i < Depo.kitapNo.size(); i++) {
 					if (noileArama==Depo.kitapNo.get(i)) {
 						Depo.kitapAdi.remove(i);
-						Depo.
+						
 						Depo.kitapFiyat.remove(i);
 						Depo.kitapNo.remove(i);
 						Depo.kitapYazar.remove(i);
@@ -141,5 +141,3 @@ public class CagirmaClassi {
 		
 		
 	
-
-

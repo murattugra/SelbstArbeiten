@@ -27,7 +27,7 @@ public List<Double> getFiyatlar() {
 	System.out.println("***********H O S G E L D I N I Z***********");
 	System.out.println("**********U R U N  L I S T E M I Z**********");
 	for (int i = 0; i < obj.getUrunler().size(); i++) {
-		System.out.println(obj.no.get(i)+"\t"+obj.getUrunler().get(i)+"\t\t"+obj.getFiyatlar().get(i)+" TL");
+		System.out.println(obj.no.get(i)+"\t"+obj.getUrunler().get(i)+"\t"+"\t"+obj.getFiyatlar().get(i)+" TL");
 	
 	}
 }
