@@ -22,8 +22,6 @@ public class Runner extends Lager{
 	}
 
 	
-	
-
 	public static void odeme(double toplamFiyat2) {
 		double odeme;
 		double ekodeme;
@@ -56,7 +54,7 @@ public class Runner extends Lager{
 				if (ekodeme!=1&&ekodeme!=5&&ekodeme!=10&&ekodeme!=20) {
 					System.out.println("Otomat sadece 1 tl , 5 tl, 10 tl, 20 tl kabul etmektedir");
 					System.out.println("lutfen paranizi aliniz ve 1 tl , 5 tl, 10 tl, 20 tl ile odeme yapiniz");
-					cikis=true;
+					cikis=false;
 					break;
 				}
 				odeme+=ekodeme;
@@ -81,7 +79,7 @@ public class Runner extends Lager{
 	
 	
 	public static void urunsecme() {
-		char devam;
+		char devam = 0;
 		do {
 			
 			int secim;
@@ -89,11 +87,24 @@ public class Runner extends Lager{
 			Scanner scan=new Scanner(System.in);
 			System.out.println("Lutfen almak istediginiz urunun numarasini giriniz");
 			secim=scan.nextInt();
-			obj.sepetUrun.add(obj.urunler.get(secim));
-			obj.sepetFiyat.add(obj.fiyatlar.get(secim));
-			toplamFiyat+=obj.fiyatlar.get(secim);
-			System.out.println("Urun eklemek istiyor musunuz E/H");
-			devam=scan.next().toUpperCase().charAt(0);
+			if (secim>14||secim<0) {
+				System.out.println("Gecersi numara girdiniz.Lutfen tekrar deneyiniz");
+			}else {
+				System.out.println("Secilen Urun :"+obj.urunler.get(secim)+" TL dir");
+				System.out.println("Secilen Urunun Fiyati :"+obj.fiyatlar.get(secim)+" TL dir");
+				obj.sepetUrun.add(obj.urunler.get(secim));
+				obj.sepetFiyat.add(obj.fiyatlar.get(secim));
+				toplamFiyat+=obj.fiyatlar.get(secim);
+				do {
+					System.out.println("Urun eklemek istiyor musunuz E/H");
+					devam=scan.next().toUpperCase().charAt(0);
+					if (devam!='E'&&devam!='H') {
+						System.out.println("Yanlis secim yaptiniz");
+					}
+				} while (devam!='E'&&devam!='H');
+					
+			}
+			
 			
 		} while (devam!='H');
 		Runner obj=new Runner();
