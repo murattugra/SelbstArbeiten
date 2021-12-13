@@ -1,4 +1,4 @@
-package Encapsulation;
+package Encapsulation02;
 
 public class Q02 {
 

@@ -15,7 +15,7 @@ public class Soru1 {
 
 		Scanner scan=new Scanner(System.in);
 
-		System.out.println("Armstrong olup olmadigini gormekk icin bir sayi giriniz");
+		System.out.println("Armstrong olup olmadigini gormek icin bir sayi giriniz");
 		
 		String sayi=scan.next();
 		String[] arr=sayi.split("");
