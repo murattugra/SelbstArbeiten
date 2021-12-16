@@ -13,6 +13,8 @@ public class Q01 {
        5- aracların motor gücünü 100 beygir ve üstü olması ve yılını hatalı veri girisine karsi kontrol ediniz.*/
 	
 	
+		
+		
 	
 	}
 
