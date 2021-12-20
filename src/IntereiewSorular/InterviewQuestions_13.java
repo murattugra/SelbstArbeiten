@@ -12,6 +12,37 @@ public class InterviewQuestions_13 {
 	     2.Yol: 3. degisken kullanmadan
 	*/
 		
+		//1. yol
+		
+		int a=5;
+		int b=3;
+		int c;
+		c=a;
+		a=b;
+		b=c;
+		System.out.println("a :"+a+","+" b :"+b);
+		
+		
+		//2 . yol
+		
+		
+		int d=5;
+		int e=3;
+		
+		e=e-d;
+		d=d+e;
+		e=d-e;
+		
+		System.out.println("d :"+d+","+" e :"+e);
+		
+		
+		/*	
+		
+	sayi1= sayi1-sayi2;
+
+	sayi2=sayi1+sayi2;
+	
+	sayi1=sayi2-sayi1;*/
 	}
 
 }
