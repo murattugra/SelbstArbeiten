@@ -11,6 +11,7 @@ public class InterviewQuestions_13 {
 	     1.Yol: 3. degisken kullanarak
 	     2.Yol: 3. degisken kullanmadan
 	*/
+		
 	}
 
 }

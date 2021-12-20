@@ -1,5 +1,7 @@
 package IntereiewSorular;
 
+import java.util.Scanner;
+
 public class InterviewQuestions_12 {
 
 	public static void main(String[] args) {
@@ -14,6 +16,25 @@ public class InterviewQuestions_12 {
 		ornek : Ey edip Adana`da pide ye,  Traş niçin şart
 		 */
 		
+		
+		palidrom();
+		
+		
+		
+	}
+
+	private static void palidrom() {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Palidrom olup olmadigini ogrenmek icin cumle giriniz");
+		String cumle=scan.nextLine().toLowerCase().replaceAll("\\s", "");
+		StringBuilder ters=new StringBuilder(cumle);
+		ters.reverse();
+		System.out.println(ters);
+		if (cumle.toString().equalsIgnoreCase(ters.toString())) {
+			System.out.println("Girdiginiz cumle Plindrom'dur");
+		}else {
+			System.out.println("Girdiginin Palidrom degildir");
+		}
 		
 	}
 
