@@ -35,14 +35,6 @@ public class InterviewQuestions_13 {
 		
 		System.out.println("d :"+d+","+" e :"+e);
 		
-		
-		/*	
-		
-	sayi1= sayi1-sayi2;
-
-	sayi2=sayi1+sayi2;
-	
-	sayi1=sayi2-sayi1;*/
 	}
 
 }
