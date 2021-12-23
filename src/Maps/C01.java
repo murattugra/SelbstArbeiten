@@ -35,9 +35,6 @@ public class C01 {
 	  
 	  
 	  
-	  
-	  
-	  
 	  return kackez;
 	  
 		
