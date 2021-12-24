@@ -14,7 +14,7 @@ public class Soru01 {
 			    */
 		
 		Scanner scan=new Scanner(System.in);
-		System.out.println("Rakamlarini toplamak icin bir sayi giriniz");
+		System.out.println("Basamak toplamak icin bir sayi giriniz");
 		int sayi=scan.nextInt();
 		
 		int toplam=0;
@@ -29,7 +29,7 @@ public class Soru01 {
 			
 		}
 		
-		System.out.println("Rakamlari toplami : "+toplam);
+		System.out.println("Basamak toplami : "+toplam);
 		
 	}
 
