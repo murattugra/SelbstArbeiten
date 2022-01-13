@@ -1,5 +1,8 @@
 package IntereiewSorular;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class InterviewQuestions_19 {
 
 	public static void main(String[] args) {
@@ -10,6 +13,30 @@ public class InterviewQuestions_19 {
 
        verilen bir string'deki tekrarlayan character'leri ve tekrar sayisini yazdırınız.
       */
+		
+		
+		String str="aaabbccccddddd";
+		String kova="";
+		int count=0;
+		for (int i = 0; i < str.length(); i++) {
+			count=0;
+			for (int j = i; j < str.length(); j++) {
+				if(str.charAt(i) == str.charAt(j)) {
+					count++;
+				}
+			}
+			if(count > 0 && !kova.contains(str.substring(i,i+1))) {
+				kova += str.charAt(i);
+				System.out.print(str.charAt(i)+""+count);
+			}
+			
+			
+		}
+		
+		
+		
+		
+		
 	}
 
 }
