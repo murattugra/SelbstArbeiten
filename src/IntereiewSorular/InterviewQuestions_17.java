@@ -1,5 +1,7 @@
 package IntereiewSorular;
 
+import java.util.Scanner;
+
 public class InterviewQuestions_17 {
 
 	public static void main(String[] args) {
@@ -17,6 +19,22 @@ public class InterviewQuestions_17 {
 		  Kullanıcının  girdigi satır sayısı kadar * ile ters yarım piramid sekli yazdıran bir program create ediniz.
 
 		  */
+		
+		
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Lutfen bir sayi giriniz");
+		int sayi=scan.nextInt();
+		
+		for (int i = 0; i < sayi; i++) {
+			for (int j = sayi; j > i; j--) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+		
+		
+		
+		
 	}
 
 }
